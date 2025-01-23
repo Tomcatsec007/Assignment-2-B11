@@ -36,7 +36,7 @@ body{
 }
 
 .hh{
-  margin-left: 30px;
+  margin-left: -330px;
   margin-bottom: 0px;
   font-weight: bold;
   font-size: 2rem;
@@ -76,6 +76,7 @@ body{
   width: 195px;
   font-family: 'Quicksand';
   border: none;
+  cursor: pointer;
 }
 
 
@@ -231,24 +232,25 @@ body{
 /* our stories */
 
 .our-stories{
+  /* background-image: url('assets/bg.png'); */
+  background-repeat:repeat; 
   background-image: url('assets/bg.png');
-  background-repeat:no-repeat;
-  background: linear-gradient(180deg, white,#f7b831 );
+  background: linear-gradient(180deg, white,#fad075 );
+  /* display: flex; */
 }
 
 .stories{
   display:flex;
-
+  max-width: 1440px;
 }
 .story-card1{
-  height: 630px;
+  height: 600px;
   width: 540px;
   border-radius: 16px;
   margin-left: 160px;
   text-align: left;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(11, 11, 11, 0.2);
-
 }
 .story-card2{
   height: 630px;
@@ -259,12 +261,12 @@ body{
   padding: 15px;
   box-shadow: 0 4px 10px rgba(11, 11, 11, 0.2);
   margin-left: 40px;
+
 }
 
 .four-cards{
-
-flex-wrap: wrap;
-justify-content: space-between;
+display: grid;
+grid-template-columns: repeat(2,1fr);
 }
 
 .story-card1-header img{
@@ -274,6 +276,9 @@ justify-content: space-between;
   margin-left: -15px;
   border-top: 15px;
 }
+.right-section{
+  width: 100%;
+}
 
 .btn1{
 background-color: #3CD8E8;
@@ -282,7 +287,7 @@ border-radius: 47px;
 border: none;
 height: 48px;
 width: 175px;
-margin-top: -650px;
+margin-top: -850px;
 }
 
 .hr{
@@ -342,6 +347,7 @@ margin-top: -650px;
   list-style-type: none;
   text-align: center;
   cursor: pointer;
+  font-size: 20px;
 }
 .abt{
   font-size: 42px;
@@ -358,8 +364,48 @@ margin-top: -650px;
 }
 .bg{
   cursor: pointer;
+  text-align: center;
 }
 .keep-in-touch{
   margin-top: 70px;
   margin-right: 250px;
 }
+
+/* exxxxx */
+.teams {
+  align-items: center;
+  gap: 20px;
+  margin-left: 210px;
+  margin-bottom: 20px;
+
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:24px;
+
+  /* height: 630px;
+  width: 640px;
+  border-radius: 16px;
+  margin-left: 160px; 
+  text-align: left;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(11, 11, 11, 0.2); */
+}
+
+.img-class{
+  height: 301px;
+  width: 290px;
+  border-radius: 16px;
+}
+
+.display-flex{
+  display: flex;
+}
+.lo{
+  text-align: center;
+  font-size: 46px;
+  
+}
+
